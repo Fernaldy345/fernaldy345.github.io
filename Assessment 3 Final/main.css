@@ -1,0 +1,667 @@
+/* ------------------------------------- */
+/* global styles  */
+
+* {
+    /* border:1px solid red; */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/crowds/amir-toossi-w9WO8txR7Uk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: auto;
+}
+
+/* ------------------------------------- */
+/* navigation section  */
+
+.navigation {
+    display: flex;
+    font-family: 'Belanosima', sans-serif;
+    background-color: rgb(36, 35, 35);
+    border-spacing: 10px;
+    justify-content: end;
+    text-align: end;
+}
+
+.navigation a {
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(36, 35, 35);
+}
+
+.navigation a:hover {
+    background-color: orange;
+}
+
+.hamburger {
+    display: none !important;
+}
+
+/* ------------------------------------- */
+/* hero section  */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 700px;
+    background-image: url(images/crowds/pim-myten-m41k1lTzjVM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero img {
+    width: 100px;
+}
+
+.hero h1 {
+    word-spacing: 15px;
+    color: #a7f2ff;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 100px;
+    text-shadow: 2px 2px 10px #a7f2ff;
+    margin-bottom: 10px;
+}
+
+.hero h2{
+    color: lightblue;
+	font-size:35px;
+    font-family: 'Audiowide', sans-serif;
+    padding-bottom: 10px;
+}
+
+.hero h3 {
+    color: white;
+    font-size: 22px;
+    font-family: 'Belanosima', sans-serif;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.hero a {
+    color: white;
+    font-family: 'Belanosima', sans-serif;
+    background-color: orange;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 25px;
+    border: 5px solid white;
+    box-shadow: 5px 5px 10px black;
+    text-decoration: none;
+}
+
+.hero a:hover {
+    background-color: darkorange;
+}
+
+/*----------------------------------------------*/
+/* lineup section */
+
+.lineup {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background-color: orange;
+    padding: 40px;
+
+    background-image: url(images/crowds/antoine-j-A_0C42zmz1Q-unsplash-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.lineupbox {
+    position: relative;
+}
+
+.lineupbox a h6 {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-family: 'Belanosima', sans-serif;
+    font-size: 30px;
+    color: rgb(0, 208, 7);
+    width: 100%;
+    height: 100%;
+}
+
+.lineupbox a img {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    width: 350px;
+    height: 375px;
+
+    object-fit: cover;
+}
+
+.lineupbox a h6:hover {
+    color: orange;
+    transition: 0.25s;
+    transform: scale(1.2);
+    text-decoration: none;
+}
+
+.lineupbox a img:hover {
+    transition: 0.25s;
+    transform: scale(1.2);
+}
+
+/* ------------------------------------- */
+/* content section  */
+
+.content {
+    background-color: #d0fe00;
+    padding: 50px;
+}
+
+.content h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+
+    /* use an image as the background  */
+    background-image: url(images/crowds/antoine-j-A_0C42zmz1Q-unsplash-2.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* ------------------------------------- */
+/* ticket section  */
+
+.ticket {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ticketbox {
+    background-color: rgba(36, 35, 35, 0.83);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.ticketbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ticketbox h2 {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+.ticketbox h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(0, 208, 7);
+    padding: 30px;
+}
+
+.ticketbox p {
+    display: block;
+    font-family: 'Belanosima', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+}
+
+.ticketbox h6 {
+    font-family: 'Belanosima', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    padding: 40px;
+}
+
+.ticketbox a {
+    color: white;
+    font-family: 'Belanosima', sans-serif;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 30px;
+    border: 5px solid white;
+    box-shadow: 5px 5px 10px black;
+    text-decoration: none;
+}
+
+.ticketbox a:hover {
+    background-color: darkorange;
+}
+
+/* ------------------------------------- */
+/* info section  */
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(images/nightlife/aleksandr-popov-SbPUMwGYzLo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.infobox {
+    width: 100%;
+}
+
+.infobox h2 {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+.locationbox {
+    width: 33.3%;
+}
+
+.locationbox img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 250px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.locationbox h3 {
+    padding-top: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    color: rgb(0, 208, 7);
+    text-decoration: none;
+}
+
+.locationbox p {
+    font-family: 'Belanosima', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+/*----------------------------------------------*/
+/* footer section */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 30px;
+    background-color: rgb(36, 35, 35);
+}
+
+.newsletter {
+    width: 30%;
+}
+
+.newsletter h2 {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 35px;
+    color: #a7f2ff;
+    text-shadow: 2px 2px 10px #a7f2ff;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.inputemail {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.inputemail:focus {
+    background-color: white;
+    outline: none;
+}
+
+.inputemail::placeholder {
+    font-style: italic;
+}
+
+.sendemail {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    background-image: linear-gradient(orange, orange);
+    border: 1px solid grey;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.sendemail:hover {
+    color: white;
+    background-image: linear-gradient(darkorange, darkorange)
+}
+
+.footerlinks a {
+    display: block;
+    padding: 10px;
+
+    font-family: 'Belanosima', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.footerlinks a:hover {
+    color: orange;
+}
+
+.social i {
+    color: white;
+    font-size: 45px;
+    padding: 10px
+}
+
+.social i:hover {
+    color: orange;
+}
+
+/*----------------------------------------------*/
+/* artists page */
+/*----------------------------------------------*/
+
+.artisthero {
+    height: 250px;
+    background-image: url(images/crowds/pim-myten-m41k1lTzjVM-unsplash.jpg);
+}
+
+.artisthero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+    color: orange;
+    text-shadow: 2px 2px 9px darkorange;
+}
+
+.artisthero h3 {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 30px;
+}
+
+.artistcontent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.artistinfo {
+    width: 30%;
+    background-color: rgba(173, 216, 230, 0.58);
+    padding: 30px;
+    box-shadow: 5px 5px 10px rgb(77, 77, 77);
+}
+
+.orange {
+    background-color: rgba(255, 106, 0, 0.58);
+}
+
+.artistinfo img {
+    width: 100%;
+    box-shadow: 2px 2px 5px grey;
+    filter: grayscale();
+    transition: 0.75s;
+}
+
+.artistinfo:hover img {
+    filter: none;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.artistdetails {
+    text-align: center;
+}
+
+.artistdetails h2 {
+    padding: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    color: rgba(0, 208, 7);
+    text-shadow: 2px 2px 5px rgb(77, 77, 77);
+}
+
+.artistdetails p {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 20px;
+}
+
+/*----------------------------------------------*/
+/* MOBILE CSS */
+/*----------------------------------------------*/
+
+@media screen and (max-width: 1280px) {
+
+    /*    
+   body{
+      border:10px solid yellow;
+   }
+    */
+
+    /*----------------------------------------------*/
+    /* mobile navigation */
+
+    .navigation {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 85px;
+        overflow: hidden;
+        transition: 1s;
+    }
+
+    .active {
+        height: 400px !important;
+    }
+
+    .hamburger {
+        display: block !important;
+        font-size: 40px !important;
+    }
+
+    /*----------------------------------------------*/
+    /* mobile hero */
+
+    .hero h1 {
+        font-size: 10vw;
+    }
+
+    .hero h2 {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .hero h3 {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    /*----------------------------------------------*/
+    /* mobile lineup */
+
+    .lineup {
+        position: relative;
+    }
+
+    /*----------------------------------------------*/
+    /* mobile content */
+
+    .content h1 {
+        font-size: 4vw;
+    }
+
+    .content h2 {
+        font-size: 3vw;
+    }
+
+    /*----------------------------------------------*/
+    /* mobile ticket */
+
+    .ticket {
+        flex-direction: column;
+    }
+
+    .ticketbox {
+        width: 100%;
+        order: -1;
+    }
+
+    .ticketbox h3 {
+        font-size: 35px;
+    }
+
+    .ticketbox p {
+        font-size: 25px;
+    }
+
+    .ticketbox h6 {
+        font-size: 15px;
+    }
+
+    .ticketbox a {
+        font-size: 25px;
+    }
+
+    /*----------------------------------------------*/
+    /* mobile info */
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .locationbox {
+        width: 100%;
+    }
+    
+    .locationbox img {
+        width: 500px;
+        height: 350px;
+    }
+
+    .locationbox h3 {
+        font-size: 7vw;
+    }
+
+    .locationbox p{
+        font-size: 4vw;
+    }
+
+    /*----------------------------------------------*/
+    /* mobile footer */
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .newsletter {
+        width: 100%;
+    }
+
+    .newsletter h2 {
+        font-size: 6vw;
+    }
+
+    .inputemail {
+        width: 80%;
+    }
+
+    .newsletter p {
+        font-size: 3vw;
+        padding-bottom: 5px;
+    }
+
+    .footerlinks a {
+        font-size: 3vw;
+    }
+
+    /*----------------------------------------------*/
+    /* mobile artist page */
+
+    .artistcontent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artistinfo {
+        width: 60%;
+        text-align: center;
+    }
+
+    .artistinfo img {
+        width: 70%;
+    }
+
+    .artistdetails h2 {
+        padding-top: 30px;
+        font-size: 7vw;
+    }
+
+    .artistdetails p {
+        font-size: 3vw;
+    }
+
+}
